@@ -2,7 +2,7 @@
 
 Wheeled autonomous robot that identifies, picks up, and delivers three colored cubes to matching drop-off cups without human intervention. Built for ME351 Mechatronics at South Dakota School of Mines, Spring 2026. Full three-block delivery cycle completes in **65 seconds**.
 
-![Full robot assembly](media/full_assembly.png)
+![Full robot assembly](media/Full assembly.png)
 
 ## Demo
 
@@ -53,7 +53,7 @@ Our solution is a four-wheeled mobile base with a vertical ball-screw arm carryi
 - Custom C++ firmware implementing a state machine driven by ground-marker detection
 - Common ground across all subsystems; independent power supplies to isolate motor draw from logic
 
-![Gripper claw with color sensor detail](media/gripper_detail.png)
+![Gripper claw with color sensor detail](media/Gripper claw with color sensor detail.png)
 
 ## Design Decisions
 
@@ -93,10 +93,9 @@ Team lead and mechanical design lead on a 5-person team. Responsible for:
 
 ```
 ├── README.md
+├── ME351_Mechatronics_Pick_and_Place_Report.pdf
 ├── src/
 │   └── Pick_and_Place_Code_Final.ino     # Arduino MEGA firmware
-├── docs/
-│   └── ME351_Mechatronics_Pick_and_Place_Report.pdf
 └── media/
     ├── full_assembly.png                 # SolidWorks render — full system
     └── gripper_detail.png                # Claw + color sensor detail
