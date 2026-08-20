@@ -53,7 +53,7 @@ Our solution is a four-wheeled mobile base with a vertical ball-screw arm carryi
 - Custom C++ firmware implementing a state machine driven by ground-marker detection
 - Common ground across all subsystems; independent power supplies to isolate motor draw from logic
 
-![Gripper claw with color sensor detail](media/Gripper claw with color sensor detail.png)
+![Gripper claw with color sensor detail](media/Gripper_detail.png)
 
 ## Design Decisions
 
