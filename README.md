@@ -2,7 +2,7 @@
 
 Wheeled autonomous robot that identifies, picks up, and delivers three colored cubes to matching drop-off cups without human intervention. Built for ME351 Mechatronics at South Dakota School of Mines, Spring 2026. Full three-block delivery cycle completes in **65 seconds**.
 
-![Full robot assembly](media/Full assembly.png)
+![Full robot assembly](media/Full robot assembly.png)
 
 ## Demo
 
