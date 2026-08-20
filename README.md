@@ -66,9 +66,8 @@ Selection between three arm architectures (articulated, ball-screw, extending) a
 
 - Robot met all project requirements: fully autonomous after start, delivered all three colored cubes from Spot A to matching cups at Spot B, onboard power only, no vision.
 - Full three-block cycle in **65 seconds**.
-- Two to three consecutive full cycles achievable before battery voltage sag began to degrade drive-motor speed enough to throw off position-by-time estimates.
 - Successfully handled all color orderings without reprogramming, using the state machine to defer pickup based on the current block-count integer.
-
+- **Stopping repeatability of ±2–6 cm** at each ground marker, driven by two coupled hardware limitations: the sensor refresh rate introduced detection latency between the marker crossing the sensor and the control loop reacting, and cycle-to-cycle drive-motor speed variation (from battery voltage sag) meant the distance covered during that latency window was inconsistent. The combined effect occasionally caused the robot to overshoot or stop short of a block or cup by enough to miss it. Higher-refresh-rate sensors and encoded drive motors would eliminate both error sources, but neither upgrade was feasible within the $100 project budget.
 ## What I'd Do Differently
 
 - **Closed-loop navigation instead of open-loop time/speed estimation.** The robot has no way to correct heading if it drifts off the line — we compensated by tuning the two drive motors to slightly different speeds to counteract weight-distribution drift, but a proper differential-drive chassis with line-tracking feedback would eliminate the fragility entirely.
